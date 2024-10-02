@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: development
+    command: npm run dev
+    networks:
+      - dev_network
+
+  cypress:
+    image: cypress/included:12.0.0
+    working_dir: /e2e
+    volumes:
+      - ./cypress:/e2e
+      - /e2e/node_modules
+    depends_on:
+      - dashboard
+    networks:
+      - dev_network
+
+networks:
+  dev_network:
+    driver: bridge

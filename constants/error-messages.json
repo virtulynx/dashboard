@@ -1,0 +1,5 @@
+{
+  "incompatibleMediaError": "Sorry, but the metrics are not available for this media asset",
+  "metricNotAvailable": "Sorry, but we could not load this metric right now.",
+  "noAdInsightsAvailable": "It seems this Facebook Ad Account doesn't have any insights available yet."
+}

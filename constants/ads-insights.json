@@ -1,0 +1,49 @@
+{
+  "docs": {
+    "description": "For details around the metrics and how to integrate with the API,",
+    "linkLabel": "check the documentation",
+    "link": "https://developers.facebook.com/docs/marketing-api/insights/"
+  },
+  "metrics": ["spend", "reach", "impressions"],
+  "fetchingApiNameAdCampaigns": "get-ad-campaigns",
+  "fetchingApiAdAccounts": "get-ad-accounts",
+  "insightsApiNameAccount": "get-ad-account-insights-daily",
+  "stateNameAccounts": "adsInsightsAccount",
+  "stateNameAdAccounts": "adsInsightsAdAccounts",
+  "stateNameCampaigns": "adsInsightsCampaigns",
+  "error": "adsInsights",
+  "graphs": [
+    {
+      "title": "Topline",
+      "charts": [
+        {
+          "id": 6,
+          "metrics": ["spend", "reach", "impressions"],
+          "type": "aggregateByProperty",
+          "title": "Topline Metrics",
+          "size": "big",
+          "icons": {
+            "spend": "AiOutlineDollarCircle",
+            "reach": "AiOutlineAreaChart",
+            "impressions": "AiOutlineEye"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Account Level",
+      "charts": [
+        {
+          "id": 3,
+          "metrics": ["spend", "reach", "impressions"],
+          "type": "line",
+          "title": "Ad Spend",
+          "size": "big"
+        }
+      ]
+    }
+  ],
+  "table": {
+    "title": "Statistics By Campaigns"
+  }
+}
