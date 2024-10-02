@@ -1,5 +1,13 @@
+# VirtuLynx Backend Playground for Meta API
+
 - [Ads Insights API](https://developers.facebook.com/docs/marketing-api/insights/)
 - [Page Insights API](https://developers.facebook.com/docs/platforminsights/page)
+- [Meta for Developers](https://developers.facebook.com/)
+- [Graph API Insights](https://developers.facebook.com/docs/graph-api/reference/v20.0/insights)
+- [Insights API](https://developers.facebook.com/docs/insights/get-started)
+- [Marketing API](https://developers.facebook.com/docs/marketing-api/insights/)
+- [Login with Facebook](https://developers.facebook.com/docs/facebook-login/web)
+- [Marketing API - Catalog](https://developers.facebook.com/docs/marketing-api/catalog/)
 
 ## Getting Started
 
@@ -22,16 +30,9 @@
 
 1. Run `npm install`
 
-   Installs project dependencies.
-   Open the terminal and run `npm install`.
-
 2. Set up `.env.local` file
 
    Copy the file `.sample.env.local` to `.env.local`
-
-   ```
-   cp .sample.env.local .env.local
-   ```
 
    Edit the `.env.local` file to add all the values for your project including your Meta information related to Pages and Ad Account to fetch the Insights data.
 
